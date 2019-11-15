@@ -1,0 +1,33 @@
+19:55:22 **** Incremental Build of configuration Debug for project NEU-Graph ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Driver.o "..\\Driver.cpp" 
+..\Driver.cpp: In function 'std::vector<adjVertexList> getadjacencylist(std::vector<std::pair<std::__cxx11::basic_string<char>, std::vector<adjVertexList> > >, std::__cxx11::string)':
+..\Driver.cpp:56:9: warning: statement has no effect [-Wunused-value]
+  for(itr;itr!=adjacencyList.end();itr++){
+         ^
+..\Driver.cpp: In function 'void dijkstras(std::vector<vertex>, std::vector<edge>, std::vector<std::pair<std::__cxx11::basic_string<char>, std::vector<adjVertexList> > >, std::__cxx11::string, std::__cxx11::string)':
+..\Driver.cpp:117:18: warning: unused variable 'track' [-Wunused-variable]
+  vector<vertex>* track = &queue;
+                  ^~~~~
+..\Driver.cpp: In function 'int main()':
+..\Driver.cpp:197:27: warning: catching polymorphic type 'class std::ios_base::failure' by value [-Wcatch-value=]
+ }catch (ifstream::failure e) {
+                           ^
+..\Driver.cpp:231:27: warning: catching polymorphic type 'class std::ios_base::failure' by value [-Wcatch-value=]
+ }catch (ifstream::failure e) {
+                           ^
+..\Driver.cpp:242:5: warning: unused variable 'count' [-Wunused-variable]
+ int count = 0;
+     ^~~~~
+..\Driver.cpp: In function 'std::vector<adjVertexList> getadjacencylist(std::vector<std::pair<std::__cxx11::basic_string<char>, std::vector<adjVertexList> > >, std::__cxx11::string)':
+..\Driver.cpp:62:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\Driver.cpp: In function 'vertex* getvertex(std::vector<vertex>*, std::__cxx11::string)':
+..\Driver.cpp:70:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+g++ -o NEU-Graph.exe Driver.o 
+
+19:55:24 Build Finished. 0 errors, 7 warnings. (took 2s.88ms)
+
